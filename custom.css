@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu > ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu > ul > li {
+  padding: 15px;
+}
+.menu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  size: 16px;
+}
+.signin-btn {
+  background-color: #4396ce;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  padding: 16px;
+}
+
+nav .menu-toggle {
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 12px;
+  margin: 10px 0;
+  background: #62b38d;
+  transition: background-color 0.5s;
+}
+nav .icon-bar {
+  background-color: #fff;
+  display: block;
+  width: 22px;
+  height: 2px;
+}
+nav .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/* *********************************************************************
+************************ HERO AREA *************************************
+********************************************************************** */
+.hero-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-banner {
+  /* width: 600px; */
+}
+.hero-banner > img {
+  width: 100%;
+}
+.app-area {
+  display: flex;
+  align-items: center;
+}
+/* *********************************************************************
+************************ GEDGET SECTION *****************************
+********************************************************************** */
+.gadget-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gadget-banner > img {
+  width: 100%;
+}
+/* *********************************************************************
+************************ RESPONSIVE *************************************
+********************************************************************** */
+
+@media (max-width: 768px) {
+  .navbar {
+    background: #6cc49b;
+  }
+  .navbar .menu-toggle {
+    display: inline-block;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .menu > ul {
+    display: block;
+  }
+  .navbar-menu > .menu-toggle {
+    display: block;
+  }
+  .navbar-menu > .menu {
+    display: block;
+    margin-top: 50px;
+  }
+  .hero-area {
+    display: block;
+  }
+  .gadget-banner {
+    display: block;
+  }
+}
